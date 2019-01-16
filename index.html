@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8"/>
+
+        <!--[if lt IE 9]>
+            <script src="JS/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <form method="post" action="calculates.php">
+            <label>
+                Primeiro número:
+                <input type="text" name="num1" />
+            </label>
+
+            <label>
+                Segundo número:
+                <input type="text" name="num2" />
+            </label>
+
+            <br />
+            Operação:
+            <br />
+
+            <label>
+                <input type="radio" name="operat" value="sum" />
+                Soma
+            </label>
+
+            <label>
+                <input type="radio" name="operat" value="sub"/>
+                Subtração
+            </label>
+
+            <label>
+                <input type="radio" name="operat" value="multi" />
+                Multiplicação
+            </label>
+
+            <label>
+                <input type="radio" name="operat" value="divi"/>
+                Divisão
+            </label>
+
+            <br />
+            <input type="submit" value="Calcular" />
+        </form>
+    </body>
+</html>
